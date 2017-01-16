@@ -75,11 +75,19 @@ describe('my awesome app', function() {
 
       it('deve agrupar todos que tiverem o id igual corretamente ', function () {
         var _idAssinante = '2002';
-        var _usuarios = [{nome: 'abc', idUsuario: 1, emailUsuario: 'a'}, {
-          nome: 'cde',
-          idUsuario: 1,
-          emailUsuario: 'b'
-        }];
+        var _usuarios = [
+          {
+            nome: 'abc',
+            idUsuario: 1,
+            emailUsuario: 'a'
+          },
+          {
+            nome: 'cde',
+            idUsuario: 1,
+            emailUsuario: 'b'
+          }
+        ];
+        
         _httpBackend.expectGET(URL_BASE_USUARIOS_LISTAGEM).respond(200, _usuarios);
 
         _AltKooponUsuariosDoAssinanteService
