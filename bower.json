@@ -1,7 +1,7 @@
 {
   "name": "alt-koopon-usuarios-assinante",
   "main": "dist/alt-koopon-usuarios-assinante.min.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/dsn-nimbus/alt-koopon-usuarios-assinante.git",
   "authors": [
     "dsn-nimbus <ericdantas0@gmail.com>"

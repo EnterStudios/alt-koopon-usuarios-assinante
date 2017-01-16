@@ -38,7 +38,7 @@ gulp.task('unit_test', (done) => {
     browsers: ['PhantomJS']
   };
 
-  return new Karma(_opts, done).start();
+  return new Karma(_opts).start(done);
 });
 
 gulp.task('coverage', ['unit_test'], () => {

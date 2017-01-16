@@ -64,13 +64,13 @@
                         }
                       });
 
-                      _.where(usuarios, {'idUsuario': _idUsuario})
-                      .map(function(usu) {
+                      _.filter(usuarios, {'idUsuario': _idUsuario})
+                      .forEach(function(usu) {
                         usu.arrayEmails = _emails;
                       });
                     });
 
-                    return _.uniq(usuarios, 'idUsuario');
+                    return _.uniqBy(usuarios, 'idUsuario');
                   });
         }
 

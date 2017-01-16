@@ -1,6 +1,6 @@
 {
   "name": "alt-koopon-usuarios-assinante",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/alt-koopon-usuarios-assinante.min.js",
   "scripts": {
     "test": "gulp unit_test",
